@@ -101,7 +101,7 @@ $(function() {
 
   $('#mul').click(function() {
     if (notLastOp()) {
-      var outputText = $('#output').text() + 'x';
+      var outputText = $('#output').text() + '*';
       $('#output').text(outputText);
     }
   });
