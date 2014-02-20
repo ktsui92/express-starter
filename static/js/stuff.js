@@ -17,7 +17,9 @@ $('#houdini_text').show()
 
 
 // Problem 3 (Tickle Me Pink) -----------------------------------------------
-// WRITE CODE HERE
+$('#tickle_me_pink').click(function() {
+$('#tickled_text').css('color','pink')	
+});
 
 
 // Problem 4 (Greet Me) -----------------------------------------------------
