@@ -8,11 +8,11 @@ $('#say_hello').click(function() {
 
 // Problem 2 (Houdini) ------------------------------------------------------
 $('#disappear').click(function() {
- alert('Hello world!')
+$('#houdini_text').hide()
 });
 
 $('#reappear').click(function() {
-alert('Hello world!')
+$('#houdini_text').show()
 });
 
 
