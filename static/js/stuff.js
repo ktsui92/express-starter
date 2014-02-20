@@ -23,4 +23,6 @@ $('#tickled_text').css('color','pink')
 
 
 // Problem 4 (Greet Me) -----------------------------------------------------
-// WRITE CODE HERE
+$('#myname').click(function() {
+alert($('#my_name').val());
+});
