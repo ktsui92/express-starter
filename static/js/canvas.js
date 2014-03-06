@@ -7,6 +7,15 @@ $(document).ready(function() {
     context.clearRect(0, 0, canvas.width, canvas.height);
   });
 
+$('#p1').click(function() {
+	context.strokeStyle = 'orange';
+	context.strokeRect(30,30,150,100);
+});
+
+$('#p2').click(function() {
+	context.strokeStyle = 'blue';
+	context.strokeRect(50,50,100,100);
+});
   //---------------------------------------------------------------------------
   //Write your code for p1-p12 here
   //
