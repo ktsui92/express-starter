@@ -16,6 +16,27 @@ $('#p2').click(function() {
 	context.strokeStyle = 'blue';
 	context.strokeRect(50,50,100,100);
 });
+
+$('#p3').click(function() {
+	context.beginPath();
+	context.arc(200,150,125,2,4);
+	context.stroke()
+});
+
+$('#p4').click(function() {
+	context.beginPath();
+	context.arc(250,150,125,2,9);
+	context.stroke();
+});
+
+$('#p5').click(function(){
+	context.moveTo(250,250);
+	context.lineTo(80,100);
+	context.stroke();
+
+});
+
+
   //---------------------------------------------------------------------------
   //Write your code for p1-p12 here
   //
