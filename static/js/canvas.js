@@ -40,6 +40,7 @@ $('#p6').click(function(){
 
 $('#p7').click(function(){
 	context.beginPath();
+	context.strokeStyle = 'red';
 	context.arc(250,150,125,2,9);
 	context.fillStyle = 'red';
 	context.fill();
@@ -52,6 +53,17 @@ $('#p8').click(function(){
 	context.fillRect(50,50,175,80);
 });
 
+$('#p9').click(function() {
+	for (var i = 1; i <= 5; i++) {
+		context.strokeRect(i*50, 50,50,50);
+	}
+});
+
+$('#p10').click(function(){
+	for (var i = 1; i <= 100; i++) {
+		context.strokeRect(i*5,50,5,5);
+	}
+});
   //---------------------------------------------------------------------------
   //Write your code for p1-p12 here
   //
