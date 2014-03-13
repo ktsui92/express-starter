@@ -12,7 +12,7 @@ if ($('#toggle_img').text() == "Go Away!") {
 // Problem 3 (Swap Em) -----------------------------------------------
 // WRITE CODE HERE
 $('#change_img').click(function() {
-alert($('#new_img_file').val());
+alert('/static/img/' + $('#new_img_file').val());
 });
 
 
