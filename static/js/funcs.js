@@ -20,9 +20,11 @@ $(document).ready(function() {
   context.stroke();
   };
 
- var drawTriplet = function(x,y,radius,color) {
-drawCircle(x,y-50,color);
-drawCircle(x-50,y,color);
+ var drawTriplet = function(x,y,color) {
+  var radius = 75;
+drawCircle(x+50,y,radius,color);
+drawCircle(x+25,y-50,radius,color);
+drawCircle(x,y,radius,color);
  };
 
 
@@ -56,11 +58,22 @@ drawCircle(300,250,50,'green');
 });
 
 $('#p6').click(function() {
-drawTriplet(100,150,50,'green');
+drawTriplet(250,250,'green');
 });
+
+$('#p7').click(function() {
+  drawTriplet(150,150,'blue');
+});
+
+$('#p8').click(function() {
+  drawTriplet(150,150,'blue');
+  drawTriplet(200,200,'green');
+  drawTriplet(75,75,'red');
+  drawTriplet(350,350,'yellow');
+});
+
 
   //---------------------------------------------------------------------------
   //Write your code for p5-p11 here
   //
-
 });
