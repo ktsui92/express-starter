@@ -13,14 +13,14 @@ var ball = {x:20,y:20,radius:20,vx:5,vy:5};
   context.beginPath();
 
 context.rect(0,0,width,height);
-context.fillStyle='red';
+context.fillStyle='blue';
 context.fill();
 context.closePath();
 
 context.beginPath();
 
 context.arc(ball.x,ball.y,ball.radius,20,20*Math.PI);
-context.fillStyle = 'black';
+context.fillStyle = 'yellow';
 context.fill();
 context.closePath();
 
