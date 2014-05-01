@@ -21,7 +21,7 @@ balls.push(b0);
   // Run an interation of the game
   var updateGame = function() {
     if (gameState == 'menu') {
-      context.fillStyle = 'blue';
+      context.fillStyle = 'red';
       context.font = "20px Arial";
       context.fillText(menuText,10,40);
     }
@@ -47,7 +47,7 @@ if (collided) {
 
     context.beginPath();
     context.rect(0,0,width,height);
-    context.fillStyle = 'red';
+    context.fillStyle = 'blue';
     context.fill();
     context.closePath();
 
@@ -76,7 +76,7 @@ for (var i = 0; i < balls.length; i++) {
 
 context.beginPath();
 context.arc(balls[i].x,balls[i].y,balls[i].radius,20,20*Math.PI);
-context.fillStyle = 'black';
+context.fillStyle = 'yellow';
 context.fill();
 context.closePath();
 
@@ -85,7 +85,7 @@ for (var i=0;i<reactions.length;i++) {
 context.beginPath();
 
 context.arc(reactions[i].x,reactions[i].y,reactions[i].radius,20,20*Math.PI);
-context.fillStyle = 'black';
+context.fillStyle = 'yellow';
 context.fill();
 context.closePath();
 
@@ -104,7 +104,7 @@ for (var i = 0; i<reactions.length;i++) {
     i--;
   }
 }
-context.fillStyle='blue';
+context.fillStyle='red';
 context.font = "20px Arial";
 context.fillText("Reactions:"+numReacted,10,20);
 }
